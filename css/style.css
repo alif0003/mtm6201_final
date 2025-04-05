@@ -1,0 +1,15 @@
+:root {
+    /* Colors Texts & Backgrounds */
+    --color-primary: #525B00;
+    --color-secondary: #351006;
+    --color-text-paragraph:#000000;
+    --color-text: white;
+
+    /* Fonts */
+
+    --font-nav: 'Poppins', sans-serif;
+    --font-buttons: 'Poppins SemiBold', sans-serif;
+    --font-titles: 'Poppins Bold', sans-serif;
+    --font-paragraphs: 'Manrope', sans-serif;
+    --font-subtitles: 'Manrope Bold', sans-serif;
+}
