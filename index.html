@@ -12,46 +12,177 @@
 </head>
 
 <body>
-    <a href="#main-content" class="skip-link">Skip to content</a>
-    <a href="#nav" class="skip-link">Skip to nav</a>
 
     <!-- Header Section -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
-            <div class="container-fluid">
+            <div class="container">
 
             <!-- Logo -->
-            <div class="logo">
-                <img src="image/logo-plant-palette (2) green.png" alt="Plan Palette Logo">
-            </div>
+            <a class="navbar-brand" href="#">
+                <img src="image/logo-plant-palette (2) green.png" alt="Plant Palette Logo" height="50">
+              </a>
+
+              <!-- Toggle for mobile menu -->
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
             <!-- Navbar Links -->
 
-        <ul class="navbar-nav ms-auto">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav mx-auto"> <!-- Centrado -->
+            <li class="nav-item">
+              <a class="nav-link" href="#">MENU</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">RESERVATIONS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">OUR STORY</a>
+            </li>
+
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                  BLOG & RECIPES
+                  <span class="caret-icon">
+                    
+                    <!-- SVG icon -->
+                    <svg width="10" height="10" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                        <path d="M23.245 4l-11.245 14.374-11.219-14.374-.781.619 12 15.381 12-15.391-.755-.609z" fill="currentColor"/>
+                      </svg>
+                  </span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">VEGAN RECIPES</a></li>
+                  <li><a class="dropdown-item" href="#">HEALTHY EATING TIPS</a></li>
+                  <li><a class="dropdown-item" href="#">ENVIRONMENTAL IMPACT</a></li>
+                </ul>
+              </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="#">Menu</a></li>
-                
-            <li><a href="#">Reservations</a></li>
-            <li><a href="#">Our Story</a></li>
-            <li class="dropdown">
-                <a href="#">Blog & Recipes</a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Vegan Recipes</a></li>
-                    <li><a href="#">Healthy Eating Tips</a></li>
-                    <li><a href="#">Articles on the environmental impact</a></li>
-                </ul>               
+              <a class="nav-link" href="#">EVENTS</a>
             </li>
-            <li><a href="#">Events</a></li>
-            <li><a href="#">Contact Us</a></li>
-        </ul>  
+            <li class="nav-item">
+              <a class="nav-link" href="#">CONTACT US</a>
+            </li>
+          </ul>
 
-        <div class="order-button">
-            <a href="#" class="btn-order">Order Now</a>
+          <!-- Order Now Button -->
+          <div class="d-flex">
+            <a href="#" class="button">Order Now</a>
+          </div>
         </div>
-        </nav>
-            </div>
-    </header>
-   
+      </div>
+    </nav>
+
+    <!-- Hero Video Section -->
+<section class="hero-video position-relative text-center text-white">
+    <!-- Background Video -->
+    <video id="heroVideo" autoplay muted loop playsinline class="w-100">
+      <source src="image/8247-207598562_small.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- Overlay -->
+    <div class="hero-content position-absolute top-50 start-0 translate-middle-y ps-5">
+    <h1 class="custom-heading">FRESH. KIND.<br>PLANT BASED</h1>
+    <p class="custom-paragraph mt-3 mb-4">Fresh ingredients, kind choices, <br> and delicious plant-based meals <br> made with care for you <br> and the earth.</p>
+    <a href="#menu" class="button">Our Menu</a>
+    
+</section>
+
+<section class="video-controls">
+    <button id="toggleBtn" class="btn btn-link text-white">
+      <svg id="pauseIcon" width="40" height="40" fill="white" viewBox="0 0 24 24">
+        <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+      </svg>
+      <svg id="playIcon" width="40" height="40" fill="white" viewBox="0 0 24 24" style="display: none;">
+        <path d="M8 5v14l11-7z"/>
+      </svg>
+    </button>
+  </section>
+
+  <!-- Main Content Section -->
+<section class="main-content">
+  <div class="container">
+    <div class="row">
+      <!-- Left side with image -->
+      <div class="col-md-6">
+        <img src="path_to_your_image.jpg" alt="Image Description" class="img-fluid">
+      </div>
+      <!-- Right side with text and link -->
+      <div class="col-md-6">
+        <h2>Your Heading Here</h2>
+        <p>Your paragraph text goes here. This is a description about something important.</p>
+        <a href="#" class="btn-link">Link to another page</a>
+        <div class="vertical-line"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<main>
+    <!-- Main Content Section -->
+    <section class="main-content">
+      <div class="container">
+        <div class="row">
+          <!-- Left side with image -->
+          <div class="col-md-6">
+            <img src="path_to_your_image.jpg" alt="Image Description" class="img-fluid">
+          </div>
+          <!-- Right side with text and link -->
+          <div class="col-md-6">
+            <h2>Your Heading Here</h2>
+            <p>Your paragraph text goes here. This is a description about something important.</p>
+            <a href="#" class="btn-link">Link to another page</a>
+            <div class="vertical-line"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  </header>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const dropdownToggle = document.getElementById('navbarDropdown');
+      const caretIcon = dropdownToggle.querySelector('.caret-icon');
+  
+      dropdownToggle.addEventListener('show.bs.dropdown', function () {
+        caretIcon.style.transform = 'rotate(180deg)';
+      });
+  
+      dropdownToggle.addEventListener('hide.bs.dropdown', function () {
+        caretIcon.style.transform = 'rotate(0deg)';
+      });
+    });
+  </script>
+
+<script>
+    const video = document.getElementById('heroVideo');
+    const playIcon = document.getElementById('playIcon');
+    const pauseIcon = document.getElementById('pauseIcon');
+    const toggleBtn = document.getElementById('toggleBtn');
+  
+    toggleBtn.addEventListener('click', () => {
+      if (video.paused) {
+        video.play();
+        playIcon.style.display = 'none';
+        pauseIcon.style.display = 'inline';
+      } else {
+        video.pause();
+        playIcon.style.display = 'inline';
+        pauseIcon.style.display = 'none';
+      }
+    });
+  </script>
 </body>
 </html>

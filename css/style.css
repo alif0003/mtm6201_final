@@ -4,12 +4,136 @@
     --color-secondary: #351006;
     --color-text-paragraph:#000000;
     --color-text: white;
+    --color-active: #818F00; 
 
     /* Fonts */
-
     --font-nav: 'Poppins', sans-serif;
     --font-buttons: 'Poppins SemiBold', sans-serif;
     --font-titles: 'Poppins Bold', sans-serif;
     --font-paragraphs: 'Manrope', sans-serif;
     --font-subtitles: 'Manrope Bold', sans-serif;
 }
+
+.logo img {
+    width: 150px; /* Ajusta el tamaño del logo */
+}
+
+/* Estilo para el botón "Order Now" */
+.button {
+    background-color: var(--color-primary); /* Si quieres usar tu color personalizado */
+    border: none;
+    padding: 10px 15px;
+    height: 40px;        /* Altura fija */
+    width: 120px;        /* Ancho fijo si tú quieres */  
+    border-radius: 20px 5px 20px 5px;
+    font-family: var(--font-buttons);
+    font-weight: 200;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+.button:hover {
+    background-color: var(--color-secondary);
+}
+
+.button:active {
+    background-color: var(--color-active); /* Otro color si quieres cuando lo presionan */
+}
+
+
+.navbar-light {
+    background-color: white !important; /* Este color es blanco siempre */
+}
+
+.nav-link {
+    letter-spacing: 1px; /* Ajusta a tu gusto */
+  }
+
+.navbar-nav .nav-link {
+    color: var(--color-secondary) !important;
+    margin-right: 20px;
+    padding-right: 10px;
+}
+
+  .dropdown-toggle::after {
+    display: none !important;
+  }
+
+  .caret-icon {
+    display: inline-block;
+    transition: transform 0.3s ease;
+    margin-left: 5px;
+    vertical-align: middle;
+  }
+  
+  .caret-icon svg {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;   /* Centra el ícono con el texto */
+    margin-left: 5px;         /* Da espacio entre el texto y el ícono */
+    fill: var(--color-secondary);
+  }
+
+  .hero-video {
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .hero-video video {
+    object-fit: cover;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+  
+  .hero-video .overlay {
+    z-index: 1;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 1); /* optional: darken video a bit */
+  }
+  
+  .hero-section {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .hero-content {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    transform: translateY(-25%);
+    max-width: 600px;
+    text-align: left;
+    margin-left: 80px;
+    z-index: 2;
+  }
+  
+  .custom-heading {
+    font-family: var(--font-titles);
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6);
+  }
+  
+  .custom-paragraph {
+    font-family: var(--font-paragraphs);
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+  }
+  
+  .video-controls {
+    position: absolute;
+    bottom: 0px; /* puedes ajustar este valor */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2; /* para que quede por encima del video */
+  }
+  
