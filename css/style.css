@@ -4,7 +4,9 @@
     --color-secondary: #351006;
     --color-text-paragraph:#000000;
     --color-text: white;
-    --color-active: #818F00; 
+    --color-active: #818F00;
+    --color-button-link: #351006;
+    --color-horizontal-line: #351006;
 
     /* Fonts */
     --font-nav: 'Poppins', sans-serif;
@@ -136,4 +138,148 @@
     transform: translateX(-50%);
     z-index: 2; /* para que quede por encima del video */
   }
+
+ /* Contenedor del contenido principal */
+.main-content {
+  height: 100vh; /* Para que la sección ocupe toda la altura de la pantalla */
+  display: flex;
+  align-items: center;
+}
+
+.main-content .container-fluid {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.main-content .row {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+/* Columna del texto */
+.main-content .text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10rem; /* Aquí juegas con el espacio alrededor del texto */
+}
+
+.main-content .image-container {
+  padding: 0;
+  margin: 0;
+}
+
+/* Imagen */
+.main-content .full-screen-img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  display: block;
+}
+
+
+.horizontal-line {
+  width: 22%;
+  height: 1px;
+  background-color: var(--color-button-link); /* Color de la línea */
+  margin-top: 0px;
+}
+
+/* Personalización del enlace */
+.main-content .btn-link {
+  font-size: 1.2rem;
+  color: var(--color-button-link);
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.main-content .btn-link:hover {
+  color: var(--color-active) /* Cambia este valor al color que prefieras */
+}
+
+/* Personalización del H2 */
+.main-content .text-content h2 {
+  font-family: var(--font-titles); /* cambia a la fuente que desees */
+  font-size: 2rem;
+  color: var(--color-primary); /* cambia al color que prefieras */
+  margin-bottom: 50px;
+}
+
+/* Personalización del párrafo */
+.main-content .text-content p {
+  font-family: var(--font-paragraphs); /* cambia según tu estilo */
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: var(--color-text-paragraph); /* opcional si quieres cambiar color */
+}
+
+.horizontal-line2 {
+  width: 44%;
+  height: 1px;
+  background-color: var(--color-button-link); /* Color de la línea */
+  margin-top: 0px;
+}
+
+.horizontal-line3 {
+  width: 31%;
+  height: 1px;
+  background-color: var(--color-button-link); /* Color de la línea */
+  margin-top: 0px;
+}
+
+.cards-section {
+  padding: 10rem;
+  background-color: white; /* o el color que quieras */
+}
+
+.container-cards {
+  display: flex;
+  flex-wrap: wrap; /* Esto permite que las cartas se ajusten a la siguiente fila */
+  justify-content: center; /* Centra las cartas */
+  padding: 20px;
+}
+
+.card {
+  width: 500px; /* Ajusta el tamaño de la carta */
+  margin: 5px; /* Espacio entre las cartas */
+  display: inline-block; /* Asegura que las cartas se alineen */
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  
+}
+
+.card img {
+  width: 100%;
+  height: 200px; /* Puedes ajustar la altura de la imagen para que todas sean iguales */
+  object-fit: cover; /* Esto hace que las imágenes se ajusten sin distorsionarse */
+}
+
+.card-text {
+  padding: 1.5rem;
+  background-color: var(--color-primary); /* o el fondo que desees */
+}
+
+.card-text h3 {
+  margin: 0 0 1rem 0;
+  font-family: var(--font-subtitles); /* si tienes variables */
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.card-text p {
+  font-family: var(--font-paragraphs);
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.card-body {
+  background-color: #f8f8f8; /* Color de fondo */
+  padding: 10px;
+}
   
