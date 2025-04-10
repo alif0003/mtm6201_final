@@ -302,7 +302,7 @@
 
 /* Nuevos márgenes para esta sección */
 .blog-recipes-section {
-  margin-top: 5rem; /* Ajusta el espacio hacia abajo de la sección anterior */
+  margin-bottom: 3rem; /* este es el importante para separar del footer */
   padding: 3rem 0;  /* Puedes ajustar el padding para que tenga más espacio en la parte superior e inferior */
 }
 
@@ -363,27 +363,29 @@
 .footer {
   background-color: var(--color-primary);
   color: white;
-  padding: 15rem 10rem;
+  padding: 15rem 10rem 25rem;
 }
 
 .footer-top {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
   align-items: flex-start;
-  justify-content: space-between;
+  gap: 5rem;
+  justify-content: flex-start; /* Esto ya lo tenías */
 }
 
 .footer-instagram {
   display: grid;
   grid-template-columns: repeat(2, 80px);
   grid-template-rows: repeat(2, 80px);
-  gap: 12rem;
+  gap: 6rem;
+  margin-left: 15rem; /* <--- Ajustá este valor según lo que necesites */
+  margin-top: -3rem;   /* <--- Esto sube las imágenes */
 }
 
 .insta-img {
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
   border-radius: 0.5rem;
   transition: transform 0.3s ease;
@@ -395,12 +397,14 @@
 
 .footer-subscription {
   max-width: 400px;
+  margin-top: 0.10rem;
+  margin-left: 2rem; /* Ajusta este valor a gusto */
 }
 
 .footer-subscription h3 {
   font-family: var(--font-heading);
   font-size: 1.8rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .footer-subscription p {
@@ -421,5 +425,60 @@
   border-radius: 5px;
   font-size: 1rem;
   font-family: var(--font-paragraph);
+}
+
+.signup-btn {
+  background-color: var(--color-secondary); /* o el color que quieras */
+}
+
+.signup-btn:hover {
+  background-color: var(--color-active);
+}
+
+.signup-btn:active {
+  background-color: var(--color-primary); /* Otro color si quieres cuando lo presionan */
+}
+
+/* Línea blanca para el footer u otra sección */
+.horizontal-line-white {
+  width: 70%; /* Puedes ajustar el tamaño */
+  height: 1px;
+  background-color: white; /* Línea blanca */
+  margin-top: 1rem; /* Ajusta el espacio según necesites */
+  margin-left: auto;  /* Esto centra la línea horizontalmente */
+  margin-right: auto; /* Esto también ayuda a centrarla */
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-right: 10px
+}
+
+.footer-menu-container {
+  background-color: var(--color-secondary);  /* O usa tu propio color */
+  border-radius: 35px 10px 35px 10px;
+  padding: 20px 30px;
+}
+
+/* Estilos del logo */
+.logo-img {
+  width: 300px;
+  height: auto;
+}
+
+/* Estilos de los enlaces */
+.footer-link {
+  font-family: var(--font-nav);
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: var(--color-primary); /* O cualquier color que elijas */
 }
 
