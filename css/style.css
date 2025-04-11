@@ -286,7 +286,6 @@
 }
 
 .card:hover {
-  transform: scale(1.03);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.8);
 }
 
@@ -300,28 +299,27 @@
   margin-left: 10rem;
 }
 
-/* Nuevos márgenes para esta sección */
 .blog-recipes-section {
-  margin-bottom: 3rem; /* este es el importante para separar del footer */
-  padding: 3rem 0;  /* Puedes ajustar el padding para que tenga más espacio en la parte superior e inferior */
+  margin-bottom: 3rem; 
+  padding: 3rem 0;  
 }
 
-/* Si necesitas ajustar el título de esta sección, también puedes hacerlo aquí */
+
 .blog-recipes-section h2 {
-  margin-bottom: 2rem; /* Espacio entre el título y el contenido */
-  font-family: var(--font-headings); /* O el tipo de fuente que quieras */
-  font-size: 2rem; /* Tamaño del título */
-  color: var(--color-primary); /* El color que prefieras */
+  margin-bottom: 2rem; 
+  font-family: var(--font-headings); 
+  font-size: 2rem; 
+  color: var(--color-primary); 
 }
 
-/* Puedes personalizar el texto si quieres */
+
 .blog-recipes-section p {
   font-family: var(--font-paragraphs);
   font-size: 1.1rem;
-  color:var(--color-text-paragraph); /* El color del texto */
+  color:var(--color-text-paragraph); 
 }
 
-/* Si necesitas un borde o espacio para el botón */
+
 .blog-recipes-section .btn-link {
   margin-top: 1rem;
   font-size: 1.2rem;
@@ -353,39 +351,43 @@
 }
 
 .reservation-button:hover {
-  color: var(--color-secondary); /* Cambia al color que desees al pasar el mouse */
+  color: var(--color-secondary); 
 }
 
 .reservation-button:active {
-  color: var(--color-active); /* Cambia al hacer clic */
+  color: var(--color-active); 
 }
 
 .footer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   background-color: var(--color-primary);
   color: white;
-  padding: 15rem 10rem 25rem;
+  padding: 12rem 3rem 0 3rem; /* change 2:  padding */
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-top {
   display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  gap: 5rem;
-  justify-content: flex-start; /* Esto ya lo tenías */
+  max-width: 700px;
+  align-items: center;
+  justify-content: center; 
+  gap: 2rem;
+  border-bottom: 2px solid white;
+  padding-bottom: 2rem; 
 }
 
 .footer-instagram {
-  display: grid;
-  grid-template-columns: repeat(2, 80px);
-  grid-template-rows: repeat(2, 80px);
-  gap: 6rem;
-  margin-left: 15rem; /* <--- Ajustá este valor según lo que necesites */
-  margin-top: -3rem;   /* <--- Esto sube las imágenes */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
 }
 
 .insta-img {
   width: 150px;
-  height: 150px;
+  height: 110px;
   object-fit: cover;
   border-radius: 0.5rem;
   transition: transform 0.3s ease;
@@ -396,9 +398,9 @@
 }
 
 .footer-subscription {
-  max-width: 400px;
+  width: 100%;
+  max-width: 500px;
   margin-top: 0.10rem;
-  margin-left: 2rem; /* Ajusta este valor a gusto */
 }
 
 .footer-subscription h3 {
@@ -428,7 +430,7 @@
 }
 
 .signup-btn {
-  background-color: var(--color-secondary); /* o el color que quieras */
+  background-color: var(--color-secondary); 
 }
 
 .signup-btn:hover {
@@ -436,40 +438,38 @@
 }
 
 .signup-btn:active {
-  background-color: var(--color-primary); /* Otro color si quieres cuando lo presionan */
+  background-color: var(--color-primary); 
 }
 
-/* Línea blanca para el footer u otra sección */
-.horizontal-line-white {
-  width: 70%; /* Puedes ajustar el tamaño */
-  height: 1px;
-  background-color: white; /* Línea blanca */
-  margin-top: 1rem; /* Ajusta el espacio según necesites */
-  margin-left: auto;  /* Esto centra la línea horizontalmente */
-  margin-right: auto; /* Esto también ayuda a centrarla */
+.footer-logo-menu {
+  display: flex;
+  width: 100%;
+  max-width: 700px;
+  align-items: center;
+  justify-content: center; 
+  padding: 2rem 0;
 }
 
 .footer-logo {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 10px;
-  margin-right: 10px
+  width: 50%;
+  padding: 0 1rem;
+}
+.footer-logo img {
+  width: 200px;
 }
 
 .footer-menu-container {
-  background-color: var(--color-secondary);  /* O usa tu propio color */
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-secondary);
   border-radius: 35px 10px 35px 10px;
-  padding: 20px 30px;
+  padding: 8px 25px;
+  width: 50%;
 }
 
-/* Estilos del logo */
-.logo-img {
-  width: 300px;
-  height: auto;
-}
-
-/* Estilos de los enlaces */
 .footer-link {
   font-family: var(--font-nav);
   font-size: 1rem;
@@ -479,6 +479,140 @@
 }
 
 .footer-link:hover {
-  color: var(--color-primary); /* O cualquier color que elijas */
+  color: var(--color-active);
+} 
+
+.footer-social {
+  display: flex;
+  width: 100%;
+  max-width: 700px;
+  justify-content: space-between;
+}
+.footer-social-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  gap: .5rem;
+}
+.social-icons {
+  display: flex;
+  gap: .5rem;
+}
+.footer-copy {
+  text-align: right;
+  width: 100%;
+  max-width: 700px;
 }
 
+
+
+
+
+
+
+/* Our Menu Page */
+
+.hero-content h1.custom-heading {
+  color: white; /* Aplica el color blanco al texto del encabezado */
+}
+
+/* Estilo de la sección */
+.menu-section {
+  background-color: #ffffff; /* Fondo claro para la sección */
+  padding: 40px 0;
+}
+
+.custom-heading {
+  font-family: var(--font-titles);
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Estilo del contenedor de los botones (sticky y rectángulo blanco) */
+.menu-buttons-container {
+  background-color: white; /* Fondo blanco */
+  padding: 15px 0; /* Espaciado superior e inferior */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera para destacar el contenedor */
+  position: sticky;
+  top: 0; /* Pegado a la parte superior de la pantalla */
+  z-index: 1000; /* Para asegurarse de que quede por encima de otros elementos */
+  width: 100%;
+  margin-top: 0%;
+  margin-bottom: 10px; /* Espacio debajo del contenedor */
+}
+
+/* Estilo de los botones dentro del contenedor */
+.menu-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.menu-btn {
+  background-color: var(--color-primary); /* Color primario */
+  color: white;
+  font-size: 1.2rem;
+  padding: 12px 30px;
+  border-radius: 25px; /* Bordes redondeados */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  visibility: visible; /* Asegura que los botones sean visibles */
+  opacity: 1; /* Asegura que no estén transparentes */
+}
+
+/* Efecto hover */
+.menu-btn:hover {
+  background-color: #EAD600; /* Color cuando se pasa el mouse */
+  transform: translateY(-5px); /* Pequeña animación al hacer hover */
+}
+
+@media screen and (max-width: 900px) {
+  .insta-img {
+    width: 100px;
+    height: 110px;
+  }
+  .footer-logo img {
+    width: 150px;
+  }
+  .footer-link {
+    font-size: .8rem;
+  }
+  .footer-menu-container {
+    width: 50%;
+    max-width: 500px;
+  }
+}
+@media screen and (max-width: 400px) {
+
+  .navbar-container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  
+  .footer-instagram {
+    display: none;
+  }
+
+  .footer-logo-menu {
+    flex-direction: column;
+    max-width: 600px;
+    gap: 2rem;
+  }
+  .footer-menu-container {
+    width: 100%;
+    max-width: 380px;
+  }
+  .footer-social {
+    flex-direction: column-reverse;
+    max-width: 500px;
+    width: 80%;
+    gap: 1rem;
+  }
+  .footer-social-icons {
+    align-items: baseline;
+  }
+}
