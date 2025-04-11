@@ -112,6 +112,24 @@ Completing this assignment gave me a stronger foundation in web development and 
 
   - https://pixabay.com/photos/dessert-glass-food-cup-cream-milk-6006446/
 
+  - https://pixabay.com/photos/salad-fresh-veggies-vegetables-791891/
+
+  - https://pixabay.com/photos/tacos-mexican-food-lunch-delicious-4540402/
+
+  - https://pixabay.com/photos/mapo-tofu-tofu-bean-paste-sichuan-2570173/
+
+  - https://pixabay.com/photos/pasta-spaghetti-italian-food-329522/
+
+  - https://pixabay.com/photos/cold-refreshments-berrymansi-5402407/
+
+  - https://pixabay.com/photos/pineapple-summer-juice-2540622/
+
+  - https://pixabay.com/photos/bananas-dessert-sweets-282313/
+
+  - https://pixabay.com/photos/ice-cream-cone-chocolate-vanilla-2576622/
+
+  - https://pixabay.com/photos/avocado-toast-tomato-avocado-basil-6779457/
+
 - **Design tool:** Figma  
 - **Icons:** 
  - https://iconmonstr.com:
