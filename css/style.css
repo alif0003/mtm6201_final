@@ -335,9 +335,6 @@ a:focus-visible {
   margin-left: 10rem;
 }
 
-
-
-
 .blog-recipes-section h2 {
   margin-bottom: 2rem; 
   font-family: var(--font-headings); 
@@ -539,12 +536,6 @@ a:focus-visible {
   max-width: 700px;
 }
 
-
-
-
-
-
-
 /* Our Menu Page */
 
 .hero-content h1.custom-heading {
@@ -596,7 +587,7 @@ div .btn .menu-btn {
 }
 
 .menu-btn:hover {
-  background-color: #EAD600; 
+  background-color: var(--color-secondary); 
   transform: translateY(-5px); 
 }
 
@@ -605,23 +596,22 @@ div .btn .menu-btn {
   margin-left: 0;
 }
 
-/* Ocultar extra cards inicialmente */
 .extra-cards {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.6s ease;
 }
 
-/* Cuando se muestra */
+
 .extra-cards.open {
-  max-height: 1000px; /* lo suficiente para mostrar las cards */
+  max-height: 1000px; 
 }
 
 .extra-cards {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  justify-content: center; /* o space-between, según tu diseño */
+  justify-content: center; 
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.6s ease;
@@ -631,7 +621,7 @@ div .btn .menu-btn {
   max-height: 1000px;
 }
 
-/* Link estilo */
+
 .toggle-link {
   display: flex;
   justify-content: center;
@@ -650,13 +640,13 @@ div .btn .menu-btn {
   color: var(--color-active);
 }
 
-/* Ícono animado (rotación si quieres usar una flecha más adelante) */
+
 .toggle-icon {
   font-size: 1.2rem;
   transition: transform 0.3s ease;
 }
 
-/* Rotar ícono cuando está activo */
+
 .toggle-link.open .toggle-icon {
   transform: rotate(180deg);
 }
