@@ -595,10 +595,14 @@ div .btn .menu-btn {
   z-index: 1;
 }
 
-/* Efecto hover */
 .menu-btn:hover {
   background-color: #EAD600; 
   transform: translateY(-5px); 
+}
+
+.menu-title {
+  text-align: center;
+  margin-left: 0;
 }
 
 @media screen and (max-width: 900px) {
