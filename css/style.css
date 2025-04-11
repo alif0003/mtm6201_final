@@ -16,6 +16,28 @@
     --font-subtitles: 'Manrope Bold', sans-serif;
 }
 
+a:focus-visible {
+  outline: 3px solid red;
+}
+
+.skip-link {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  width: 90px;
+  background: white;
+  color: black;
+  padding: 10px;
+  z-index: 100;
+  transition: top 0.3s ease;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.skip-link:focus {
+  top: -5px;
+}
+
 .logo img {
     width: 150px; /* Ajusta el tamaño del logo */
 }
@@ -46,9 +68,23 @@
     background-color: var(--color-active); /* Otro color si quieres cuando lo presionan */
 }
 
+.navbar-logo-menu {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  gap: 3rem;
+}
 
 .navbar-light {
     background-color: white !important; /* Este color es blanco siempre */
+}
+
+.navbar-brand {
+  order: 1;
+}
+
+.order-button {
+  order: 3;
 }
 
 .nav-link {
@@ -60,6 +96,10 @@
     margin-right: 20px;
     padding-right: 10px;
 }
+
+/* header .navbar .navbar-container {
+  justify-content: center;
+} */
 
   .dropdown-toggle::after {
     display: none !important;
@@ -108,7 +148,7 @@
 
   .hero-content {
     position: absolute;
-    top: 25%;
+    top: 50%;
     left: 5%;
     transform: translateY(-25%);
     max-width: 600px;
@@ -141,7 +181,6 @@
 
  /* Contenedor del contenido principal */
 .main-content {
-  height: 100vh; /* Para que la sección ocupe toda la altura de la pantalla */
   display: flex;
   align-items: center;
 }
@@ -163,7 +202,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 10rem; /* Aquí juegas con el espacio alrededor del texto */
+  padding: 10rem; 
 }
 
 .main-content .image-container {
@@ -299,10 +338,10 @@
   margin-left: 10rem;
 }
 
-.blog-recipes-section {
+/* .blog-recipes-section {
   margin-bottom: 3rem; 
   padding: 3rem 0;  
-}
+} */
 
 
 .blog-recipes-section h2 {
@@ -336,7 +375,7 @@
 
 .reservation-section {
   background-color: white;
-  padding: 0rem 0;
+  padding: 1rem 0;
   text-align: center;
 }
 
@@ -520,7 +559,6 @@
 
 /* Estilo de la sección */
 .menu-section {
-  background-color: #ffffff; /* Fondo claro para la sección */
   padding: 40px 0;
 }
 
@@ -533,7 +571,6 @@
 
 /* Estilo del contenedor de los botones (sticky y rectángulo blanco) */
 .menu-buttons-container {
-  background-color: white; /* Fondo blanco */
   padding: 15px 0; /* Espaciado superior e inferior */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera para destacar el contenedor */
   position: sticky;
@@ -551,7 +588,7 @@
   gap: 20px;
 }
 
-.menu-btn {
+div .btn .menu-btn {
   background-color: var(--color-primary); /* Color primario */
   color: white;
   font-size: 1.2rem;
@@ -562,6 +599,7 @@
   transition: background-color 0.3s ease, transform 0.3s ease;
   visibility: visible; /* Asegura que los botones sean visibles */
   opacity: 1; /* Asegura que no estén transparentes */
+  z-index: 1;
 }
 
 /* Efecto hover */
@@ -571,6 +609,29 @@
 }
 
 @media screen and (max-width: 900px) {
+
+  .navbar-logo-menu {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .navbar-toggler {
+    order: 2;
+  }
+
+  .main-content .text-content {
+    padding: 2rem;
+  }
+
+  .section-title {
+    margin-left: auto;
+  }
+
+  .card {
+    width: 400px;
+  }
+
   .insta-img {
     width: 100px;
     height: 110px;
@@ -588,11 +649,40 @@
 }
 @media screen and (max-width: 400px) {
 
-  .navbar-container {
+  a img {
+    width: 90px;
+    height: 35px;
+    padding-left: 8px;
+  }
+
+  .custom-heading {
+    font-size: 1.5rem;
+  }
+
+  .hero-content {
+    position: inherit;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
+    gap: 1rem;
+    top: 30%;
+    margin-left: 0;
+  }
+
+  .story-section {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  
+  .blog-recipes-section {
+    margin-bottom: 0; 
+    padding: 2rem 0;  
   }
   
+  .footer{
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+  }
   .footer-instagram {
     display: none;
   }

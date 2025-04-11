@@ -16,74 +16,75 @@
 
 <body>
 
+  <a href="#main-content" class="skip-link">Skip to content</a>
+    <a href="#nav" class="skip-link">Skip to nav</a>
+
     <!-- Header Section -->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white">
-            <div class="container navbar-container">
+    <header role="banner">
+      <nav role="navigation" id="nav" class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container navbar-container">
 
-            <!-- Logo -->
+          <!-- Logo -->
+          <div class="navbar-logo-menu">
             <a class="navbar-brand" href="#">
-                <img src="image/logo-plant-palette-green.png" alt="Plant Palette Logo" height="50">
+              <img src="image/logo-plant-palette-green.png" alt="Plant Palette Logo" height="50">
             </a>
-
+  
               <!-- Toggle for mobile menu -->
+  
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+  
+          </div>
+          <div class="d-flex order-button">
+            <a href="#" class="button">Order Now</a>
+          </div>
+          <!-- Navbar Links -->
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-            <!-- Navbar Links -->
-
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav mx-auto"> <!-- Centrado -->
-            <li class="nav-item">
-              <a class="nav-link" href="menu.html">MENU</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">RESERVATIONS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="our-story.html">OUR STORY</a>
-            </li>
-
-            <!-- Dropdown -->
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                  BLOG & RECIPES
-                  <span class="caret-icon">
-                    
-                    <!-- SVG icon -->
-                    <svg width="10" height="10" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
-                        <path d="M23.245 4l-11.245 14.374-11.219-14.374-.781.619 12 15.381 12-15.391-.755-.609z" fill="currentColor"/>
-                      </svg>
-                  </span>
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">VEGAN RECIPES</a></li>
-                  <li><a class="dropdown-item" href="#">HEALTHY EATING TIPS</a></li>
-                  <li><a class="dropdown-item" href="#">ENVIRONMENTAL IMPACT</a></li>
-                </ul>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mx-auto"> <!-- Centrado -->
+              <li class="nav-item">
+                <a class="nav-link" href="#">MENU</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">RESERVATIONS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">OUR STORY</a>
               </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="#">EVENTS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">CONTACT US</a>
-            </li>
-          </ul>
+              <!-- Dropdown -->
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                    BLOG & RECIPES
+                    <span class="caret-icon">
+                      
+                      <!-- SVG icon -->
+                      <svg width="10" height="10" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                          <path d="M23.245 4l-11.245 14.374-11.219-14.374-.781.619 12 15.381 12-15.391-.755-.609z" fill="currentColor"/>
+                        </svg>
+                    </span>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">VEGAN RECIPES</a></li>
+                    <li><a class="dropdown-item" href="#">HEALTHY EATING TIPS</a></li>
+                    <li><a class="dropdown-item" href="#">ENVIRONMENTAL IMPACT</a></li>
+                  </ul>
+                </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">EVENTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CONTACT US</a>
+              </li>
+            </ul>
+          </div>
         </div>
-
-        <!-- Order Now Button -->
-      <div class="d-flex">
-        <a href="#" class="button">Order Now</a>
-      </div>
-    </div>
-
-
-  </nav>
+      </nav>
 
     <!-- Hero Video Section -->
 <section class="hero-video position-relative text-center text-white">
@@ -94,7 +95,7 @@
     </video>
 
     <!-- Overlay -->
-  <div class="hero-content position-absolute top-50 start-0 translate-middle-y ps-5">
+  <div class="hero-content position-absolute start-0 translate-middle-y ps-5">
     <h1 class="custom-heading">FRESH. KIND.<br>PLANT BASED</h1>
     <p class="custom-paragraph mt-3 mb-4">Fresh ingredients, kind choices, <br> and delicious plant-based meals <br> made with care for you <br> and the earth.</p>
     <a href="menu.html" class="button">Our Menu</a>
@@ -114,11 +115,11 @@
   </section>
 
 
-<main>
+<main role="main" id="main-content">
     <!-- Main Content Section -->
     <section class="main-content">
       <div class="container-fluid">
-        <div class="row no-gutters">
+        <div class="row no-gutters story-section">
 
           <!-- Left side with text and link -->
           <div class="col-md-6 text-content">
@@ -159,7 +160,7 @@
           <!-- Third Section -->
     <section class="main-content">
       <div class="container-fluid">
-        <div class="row no-gutters">
+        <div class="row no-gutters story-section">
 
           <!-- Left side with text and link -->
           <div class="col-md-6 text-content">
@@ -264,7 +265,7 @@
   </header>
 
     <!-- Footer Start -->
-<footer class="footer">
+<footer role="footer" id="footer" class="footer">
   <div class="footer-top">
     
     <!-- Left: Instagram images -->
